@@ -1,0 +1,22 @@
+{
+  "name": "jlbeard-www",
+  "version": "1.0.0",
+  "description": "JLBeard.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlbeard84/jlbeard-www.git"
+  },
+  "author": "Josh Beard",
+  "license": "MIT",
+  "homepage": "https://github.com/jlbeard84/jlbeard-www#readme",
+  "devDependencies": {
+    "@fortawesome/fontawesome-free-webfonts": "^1.0.9",
+    "parcel-bundler": "1.11.0",
+    "sass": "1.17.2",
+    "typescript": "3.3.3333"
+  },
+  "dependencies": {
+    "typeface-press-start-2p": "0.0.72",
+    "@fortawesome/fontawesome-free": "5.7.2"
+  }
+}
