@@ -1,0 +1,26 @@
+dist: trusty
+sudo: false
+
+branches:
+  only:
+    - master
+
+language: node_js
+node_js:
+  - "8.9.4"
+
+before_script:
+  - npm install -g parcel
+
+script: 
+  - npm run build
+
+deploy:
+  skip_cleanup: true
+  provider: pages
+  github_token: $GITHUB_TOKEN
+  repo: jlbeard84/jlbeard84.github.io
+  target-branch: master
+  local_dir: dist/
+  on:
+    branch: master

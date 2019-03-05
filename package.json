@@ -2,6 +2,10 @@
   "name": "jlbeard-www",
   "version": "1.0.0",
   "description": "JLBeard.com",
+  "scripts": {
+    "serve": "parcel index.html",
+    "build": "parcel build index.html"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jlbeard84/jlbeard-www.git"
