@@ -6,7 +6,7 @@ const updater = new BackgroundUpdater();
 
 setInterval(() => {
     updater.update();
-}, 200);
+}, 250);
 
 
 
