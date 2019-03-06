@@ -35,8 +35,6 @@ export class BackgroundUpdater {
     }
 
     public update(): void {
-        //console.log(this._body);
-
         if (this._isRedIncrementing) {
             this._red++;
         } else if (this._isRedDecrementing) {
