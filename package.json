@@ -19,8 +19,9 @@
     "typescript": "3.3.3333"
   },
   "dependencies": {
-    "typeface-press-start-2p": "0.0.72",
     "@fortawesome/fontawesome-free": "5.7.2",
-    "@fortawesome/fontawesome-free-webfonts": "^1.0.9"
+    "@fortawesome/fontawesome-free-webfonts": "1.0.9",
+    "dotbeat": "1.0.2",
+    "typeface-press-start-2p": "0.0.72"
   }
 }

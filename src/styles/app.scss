@@ -8,7 +8,7 @@ body {
 }
 
 div.top-bar {
-    color: white;
+    color: var(--top-bar-font-color);
     font-family: 'Press Start 2P', cursive;
     background-color: var(--top-bar-background);
     padding: 1.4em 1.2em 1em 1.2em;
@@ -22,5 +22,33 @@ div.icon-bar {
 
     a, a:active, a:hover, a:visited, :any-link {
         color: var(--icon-link-color);
+    }
+}
+
+div.footer {
+    position: absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    font-family: 'Press Start 2P', cursive;
+    background-color: var(--bottom-bar-background);
+    border-top: 1px solid var(--bottom-bar-border-color);
+    color: var(--bottom-bar-font-color);
+    padding:.5em;
+
+    div.beats-container {
+        font-size:.6em;
+
+        a, a:active, a:hover, a:visited, :any-link {
+            color: var(--footer-link-color);
+        }
+
+        a, a:visited, :any-link {
+            text-decoration: none;
+        }
+
+        a:active, a:hover {
+            text-decoration: underline;
+        }
     }
 }
