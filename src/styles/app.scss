@@ -20,8 +20,12 @@ div.icon-bar {
     display:flex;
     justify-content: space-between;
 
-    a, a:active, a:hover, a:visited, :any-link {
+    a, a:active, a:visited, :any-link {
         color: var(--icon-link-color);
+    }
+
+    a:hover {
+        color: var(--icon-hover-link-color);
     }
 }
 
@@ -34,10 +38,11 @@ div.footer {
     background-color: var(--bottom-bar-background);
     border-top: 1px solid var(--bottom-bar-border-color);
     color: var(--bottom-bar-font-color);
-    padding:.5em;
+    padding:.5em 0;
 
     div.beats-container {
         font-size:.6em;
+        padding-left:.5em;
 
         a, a:active, a:hover, a:visited, :any-link {
             color: var(--footer-link-color);
