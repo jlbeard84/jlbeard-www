@@ -14,12 +14,12 @@
   "license": "MIT",
   "homepage": "https://github.com/jlbeard84/jlbeard-www#readme",
   "devDependencies": {
-    "parcel-bundler": "1.11.0",
-    "sass": "1.17.2",
-    "typescript": "3.3.3333"
+    "parcel-bundler": "1.12.4",
+    "sass": "1.23.3",
+    "typescript": "3.7.2"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "5.7.2",
+    "@fortawesome/fontawesome-free": "5.11.2",
     "@fortawesome/fontawesome-free-webfonts": "1.0.9",
     "dotbeat": "1.0.2",
     "roboto-fontface": "^0.10.0",
