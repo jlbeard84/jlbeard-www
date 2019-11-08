@@ -4,27 +4,56 @@ body {
     margin:0;
     padding:0;
     cursor: default !important;
+    font-family: 'Roboto';
+    color:var(--main-header-text-color);
+    background-color:var(--main-background),;
 
     div.main-container {
-        display:flex;
-        flex-basis: 50%;
-        justify-content: center;
-        flex-direction: column;
+        width:100%;
+        height:100%;
+        background-image:linear-gradient(to bottom, var(--main-background), transparent 100%), url('/src/assets/home-bg.png');
+        background-repeat:no-repeat;
+        background-size:100% 100%, cover;
+        background-position:center bottom;
 
-        img.intro-image {
-            width:120px;
-            height:120px;
-            
+        div.main-header {
+            display:flex;
+            padding: .5em .5em 0 .5em;
+
+            div.main-header-title, div.main-header-description {
+                flex-shrink: 0;
+                flex-grow:0;
+                flex-basis:50%;
+                width:100%;
+            }
+
+            div.main-header-title {
+                font-size:2em;
+            }
+
+            div.main-header-description {
+                font-size:1.4em;
+                text-align:right;
+            }
         }
-    }
 
-    div.center-container {
+        div.icon-bar {
+            position: absolute;
+            bottom:0;
+            padding-bottom: 1.2em;
+            width:100%;
 
-        display:flex;
-        flex-basis: 50%;
+            div.icon-bar-content {
+                display:flex;
+                justify-content: flex-end;
 
-        img.intro-image {
-
+                a, i {
+                    color: var(--icon-color);
+                    font-size:1.45em;
+                    margin-left:.2em;
+                    margin-right:.2em;
+                }
+            }
         }
     }
 }
