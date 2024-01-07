@@ -89,6 +89,16 @@ body {
     font-size: 2em;
 }
 
-a {
+a.social-link {
     color:#000;
+    border-radius: 50%;
+    width:1em;
+    height:1em;
+    padding:0.2em;
+    transition: 0.7s;
+    text-align:center;
+}
+
+a.social-link:hover {
+    background-color: #9ED2F4;
 }
