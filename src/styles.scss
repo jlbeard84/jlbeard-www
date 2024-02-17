@@ -1,0 +1,53 @@
+body {
+    display:flex;
+    margin:0;
+    padding:0;
+    height:100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+div.aqua-box {
+    border-radius: 20px;
+    width:60%;
+
+    div.header {
+        height:26px;
+        width:100%;
+        background-color: #999;
+        display:flex;
+        justify-content: space-between;
+        flex-direction: row;
+
+        div.window-dots {
+            display:flex;
+            flex-direction: row;
+            display:flex;
+            align-items: center;
+            margin-left:6px;
+
+            div.window-dot {
+                height:16px;
+                width:16px;
+                border-radius:50%;
+                margin-left:3px;
+                margin-right:3px;
+
+                &.red {
+                    background-color:red;
+                }
+
+                &.yellow {
+                    background-color:yellow;
+                }
+
+                &.green {
+                    background-color:green;
+                }
+            }
+        }
+    }
+}
+
+
+
