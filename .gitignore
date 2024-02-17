@@ -19,3 +19,4 @@ testem.log
 .DS_Store
 Thumbs.db
 .cache
+/.parcel-cache
