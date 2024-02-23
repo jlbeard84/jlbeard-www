@@ -7,13 +7,13 @@ branches:
 
 language: node_js
 node_js:
-  - "8.9.4"
+  - "20.11.1"
 
 before_script:
   - npm install -g parcel
 
 script: 
-  - npm run build
+  - npx parcel build index.html robots.txt
 
 deploy:
   skip_cleanup: true

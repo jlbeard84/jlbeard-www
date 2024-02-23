@@ -1,0 +1,44 @@
+@import "variables.scss";
+
+body {
+    background-color: var(--main-background);
+    height:100vh;
+}
+
+.navbar {
+    background-color: var(--main-background);
+}
+
+.navbar-brand {
+    width:100%;
+}
+
+.navbar-icons {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    a, i {
+        color:var(--icon-color);
+        font-size:1.2em;
+        margin-left:.2em;
+        margin-right:.2em;
+    }
+}
+
+div.main-page {
+    width:100%;
+    padding:2em;
+    color:var(--main-text-color);
+
+    .main-page-text {
+        font-size:3.7em;
+        line-height: 1em;
+        font-weight:bolder;
+
+        span {
+            color:var(--name-color);
+        }
+    }
+}
