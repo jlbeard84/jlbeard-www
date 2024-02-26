@@ -27,4 +27,5 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install -g parcel
+    - run: npm install
     - run: npx parcel build index.html robots.txt
