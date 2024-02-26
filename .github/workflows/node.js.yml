@@ -30,14 +30,13 @@ jobs:
     - run: npm install
     - run: npx parcel build index.html robots.txt
 
-    - name: Single commit publish
-      uses: antaljanosbenjamin/single-commit-publish@v1.0.1
+    - name: Push directory to another repository
+      uses: cpina/github-action-push-to-another-repository@v1.7.2
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        github-repository: jlbeard84/jlbeard84.github.io
-        branch: gh-pages
-        source-dir: dist/
-        files-and-dirs: /*
+        source-directory: dist
+        destination-github-username: jlbeard84
+        destination-repository-name: jlbeard84.github.io
+        user-email: actions@jlbeard.com
+        target-branch: gh-pages
+        commit-message: 'Updating GH Pages'
         
-        
-    
