@@ -33,7 +33,6 @@ jobs:
     - name: Push directory to another repository
       uses: cpina/github-action-push-to-another-repository@v1.7.2
       with:
-        API_TOKEN_GITHUB: ${{ secrets.GITHUB_TOKEN }}
         source-directory: dist
         destination-github-username: jlbeard84
         destination-repository-name: jlbeard84.github.io
