@@ -29,3 +29,11 @@ jobs:
     - run: npm install -g parcel
     - run: npm install
     - run: npx parcel build index.html robots.txt
+
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v4.3.1
+      with:
+        name: artifact
+        path: dist/
+
+    
