@@ -30,6 +30,12 @@ jobs:
     - run: npm install
     - run: npx parcel build index.html robots.txt
 
+    - name: Copy file
+      uses: canastro/copy-action@0.0.2
+      with:
+        source: CNAME
+        target: dist/CNAME
+          
     - name: Push directory to another repository
       uses: cpina/github-action-push-to-another-repository@v1.7.2
       env:
