@@ -1,12 +1,17 @@
 @import "variables.scss";
 
+html, body {
+    height:100%;
+}
+
 body {
     background-color: var(--main-background);
-    height:100vh;
+    display:flex;
+    flex-direction: column;
 }
 
 .navbar {
-    background-color: var(--main-background);
+    background-color: var(--main-background) !important;
 }
 
 .navbar-brand {
@@ -41,7 +46,8 @@ div.main-page {
         font-weight:bolder;
 
         span {
-            color:var(--name-color);
+            color:var(--secondary-color);
+            animation: name-color-change 6s;
         }
     }
 }
@@ -52,12 +58,30 @@ div.main-page-description {
     line-height:1em;
 }
 
-div.main-page-buttons {
-    margin:1em 1em 0 1em;
+div.card-container {
     display:flex;
-    width:100%;
+    align-items: end;
+    margin:1em 2em;
+    flex-grow: 1;
+    justify-self: flex-end;
 
-    a {
-        margin:0 0.5em;
+    .columns {
+        width:100%;
     }
+
+    .card:hover {
+        animation: background-secondary-fade 1s forwards;
+        cursor: pointer;
+    }
+}
+
+
+@keyframes name-color-change {
+    0% { color: var(--main-text-color); }
+    100% { color: var(--secondary-color); }
+}
+
+@keyframes background-secondary-fade {
+    0% { background-color: #ffffff; }
+    100% { background-color: var(--secondary-color); }
 }
