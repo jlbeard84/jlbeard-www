@@ -27,10 +27,13 @@ body {
     }
 }
 
-div.main-page {
+div.main-page, div.main-page-description {
     width:100%;
-    padding:2em;
     color:var(--main-text-color);
+}
+    
+div.main-page {
+    padding:2em 2em 0 2em;
 
     .main-page-text {
         font-size:3.7em;
@@ -40,5 +43,21 @@ div.main-page {
         span {
             color:var(--name-color);
         }
+    }
+}
+
+div.main-page-description {
+    padding:0.4em 1em 0 1em;
+    font-size:1.6em;
+    line-height:1em;
+}
+
+div.main-page-buttons {
+    margin:1em 1em 0 1em;
+    display:flex;
+    width:100%;
+
+    a {
+        margin:0 0.5em;
     }
 }
