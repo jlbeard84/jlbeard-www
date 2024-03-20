@@ -10,28 +10,6 @@ body {
     flex-direction: column;
 }
 
-.navbar {
-    background-color: var(--main-background) !important;
-}
-
-.navbar-brand {
-    width:100%;
-}
-
-.navbar-icons {
-    width:100%;
-    display:flex;
-    justify-content:flex-end;
-    align-items:center;
-
-    a, i {
-        color:var(--icon-color);
-        font-size:1.2em;
-        margin-left:.2em;
-        margin-right:.2em;
-    }
-}
-
 div.main-page, div.main-page-description {
     width:100%;
     color:var(--main-text-color);

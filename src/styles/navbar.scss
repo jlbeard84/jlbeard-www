@@ -1,0 +1,28 @@
+.navbar {
+    background-color: var(--main-background) !important;
+}
+
+.navbar-brand {
+    width:100%;
+}
+
+.navbar-icons {
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
+
+    a, i {
+        color:var(--icon-color);
+        font-size:1.2em;
+        margin-left:.2em;
+        margin-right:.2em;
+    }
+
+    .header-jb {
+        letter-spacing: -4px;
+        padding-left: .4em;
+        padding-right: .4em;
+        margin-bottom: .2em; 
+    }
+}

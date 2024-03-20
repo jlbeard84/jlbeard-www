@@ -2,6 +2,15 @@ const template = `
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
             <div class="navbar-icons">
+
+            <a href="/" aria-label="Home" class="header-jb">
+                JB
+            </a>
+
+            <a href="demo.html" aria-label="Demos">
+                <i class="far fa-file-code"></i>
+            </a>
+
             <a href="https://github.com/jlbeard84" aria-label="Github">
                 <i class="fab fa-github"></i>
             </a>

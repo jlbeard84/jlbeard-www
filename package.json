@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "serve": "parcel index.html",
-    "build": "parcel build index.html"
+    "serve": "parcel *.html",
+    "build": "parcel build *.html"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.11.0",
