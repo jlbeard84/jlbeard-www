@@ -28,7 +28,7 @@ jobs:
         cache: 'npm'
     - run: npm install -g parcel
     - run: npm install
-    - run: npx parcel build index.html resume.html robots.txt
+    - run: npx parcel build *.html robots.txt
 
     - name: Copy file
       uses: canastro/copy-action@0.0.2
