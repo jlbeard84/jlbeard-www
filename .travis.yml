@@ -13,7 +13,7 @@ before_script:
   - npm install -g parcel
 
 script: 
-  - npx parcel build index.html resume.html robots.txt
+  - npx parcel build *.html robots.txt
 
 deploy:
   skip_cleanup: true
