@@ -36,6 +36,14 @@ div.main-page-description {
     line-height:1em;
 }
 
+.title {
+    color: var(--main-text-color);
+}
+
+div.card {
+    background-color: var(--card-background-color);
+}
+
 @keyframes name-color-change {
     0% { color: var(--main-text-color); }
     100% { color: var(--secondary-color); }
