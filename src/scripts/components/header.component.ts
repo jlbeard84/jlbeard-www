@@ -7,6 +7,14 @@ const template = `
                 JB
             </a>
 
+            <a href="resume.html" aria-label="Resume">
+                <i class='far fa-file-alt'></i>
+            </a>
+
+            <a href="projects.html" aria-label="Projects">
+                <i class='far fa-lightbulb'></i>
+            </a>
+
             <a href="demo.html" aria-label="Demos">
                 <i class="far fa-file-code"></i>
             </a>
