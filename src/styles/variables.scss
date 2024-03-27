@@ -1,7 +1,8 @@
 :root {
     --main-background: #262F3F;
     --main-header-text-color: #ffffff;
-    --icon-color: #ffffff;
+    --icon-color: var(--main-background);
+    --icon-color-hover: rgb(22, 137, 204);
     --main-text-color: #ffffff;
     --secondary-color:#F4C09E;
     --card-background-color: #eeeeee;

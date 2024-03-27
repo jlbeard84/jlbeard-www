@@ -1,8 +1,7 @@
 const template = `
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <div class="navbar-icons">
-
+    
+    <div class="nav-icons">
+        <div class="icon-container">
             <a href="/" aria-label="Home" class="header-jb">
                 JB
             </a>
@@ -26,9 +25,9 @@ const template = `
             <a href="https://www.linkedin.com/in/joshua-beard-3087ab31/" aria-label="LinkedIn">
                 <i class="fab fa-linkedin"></i>
             </a>
-            </div>
         </div>
-    </nav>
+    </div>
+    
 `;
 
 class HeaderComponent extends HTMLElement {

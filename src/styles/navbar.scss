@@ -1,28 +1,35 @@
-.navbar {
-    background-color: var(--main-background) !important;
-}
-
-.navbar-brand {
-    width:100%;
-}
-
-.navbar-icons {
+.nav-icons {
     width:100%;
     display:flex;
     justify-content:flex-end;
     align-items:center;
+    background-color: var(--main-background) !important;
 
-    a, i {
-        color:var(--icon-color);
-        font-size:1.2em;
-        margin-left:.2em;
-        margin-right:.2em;
-    }
+    .icon-container {
 
-    .header-jb {
-        letter-spacing: -4px;
-        padding-left: .4em;
-        padding-right: .4em;
-        margin-bottom: .2em; 
+        border-radius: var(--sl-border-radius-pill);
+        background-color: var(--secondary-color);
+        padding:.5em;
+        margin-right:.5em;
+
+        a, i {
+            color:var(--icon-color);
+            font-size:1.2em;
+            margin-left:.2em;
+            margin-right:.2em;
+            text-decoration: none;
+        }
+
+        a:hover, i:hover {
+            color:var(--icon-color-hover);
+        }
+    
+        .header-jb {
+            letter-spacing: -4px;
+            padding-left: .4em;
+            padding-right: .4em;
+            margin-bottom: .2em; 
+            font-size:1.4em !important;;
+        }
     }
 }
