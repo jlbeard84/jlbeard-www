@@ -14,36 +14,15 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [20.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - name: Clean install
-      run: rm -rf node_modules package-lock.json && npm i
-    - run: npm install -g parcel
-    - run: npm install
-    - run: npx parcel build *.html robots.txt
-
-    - name: Copy file
-      uses: canastro/copy-action@0.0.2
-      with:
-        source: CNAME
-        target: dist/CNAME
+    - uses: actions/checkout@v6
           
     - name: Push directory to another repository
-      uses: cpina/github-action-push-to-another-repository@v1.7.2
+      uses: cpina/github-action-push-to-another-repository@55306faa4ed53b815ae49e564af8cfb359d32ae2
       env:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
       with:
-        source-directory: dist
+        source-directory: src
         destination-github-username: jlbeard84
         destination-repository-name: jlbeard84.github.io
         user-email: actions@jlbeard.com
