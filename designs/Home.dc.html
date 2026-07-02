@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+
+<div data-screen-label="Home" style="background:#f6efe4;font-family:'Libre Franklin',sans-serif;color:#2e2620;min-height:100vh">
+
+  <!-- NAV -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:28px 64px;max-width:1120px;margin:0 auto">
+    <a href="Home.dc.html" style="font:600 20px/1 'Source Serif 4',serif;color:#2e2620;text-decoration:none">Josh Beard</a>
+    <div style="display:flex;gap:8px;font:500 13px/1 'Libre Franklin',sans-serif">
+      <a href="#about" style="color:#2e2620;text-decoration:none;padding:9px 16px;border-radius:20px" style-hover="background:#ebe1cf">About</a>
+      <a href="Resume.dc.html" style="color:#2e2620;text-decoration:none;padding:9px 16px;border-radius:20px" style-hover="background:#ebe1cf">Résumé</a>
+      <a href="Blog.dc.html" style="color:#2e2620;text-decoration:none;padding:9px 16px;border-radius:20px" style-hover="background:#ebe1cf">Blog</a>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div id="about" style="display:grid;grid-template-columns:220px 1fr;gap:48px;padding:36px 64px 68px;align-items:center;max-width:1120px;margin:0 auto">
+    <div style="width:220px;height:220px;border-radius:16px;background:#e3d5b8;box-shadow:0 10px 24px rgba(46,38,32,.12);display:flex;align-items:center;justify-content:center;font:500 15px/1 'Libre Franklin',sans-serif;color:#a68d5f">photo</div>
+    <div>
+      <div style="font:600 13px/1 'Libre Franklin',sans-serif;letter-spacing:.04em;color:#b5502f;margin-bottom:14px">SOFTWARE ENGINEER &amp; TECHNICAL LEAD · CHARLESTON, SC</div>
+      <h1 style="margin:0 0 16px;font:600 42px/1.2 'Source Serif 4',serif;color:#2e2620">Hi, I'm Josh.</h1>
+      <p style="margin:0 0 22px;font:400 17px/1.7 'Libre Franklin',sans-serif;color:#4a4136;max-width:540px">I'm a software engineer and technical lead at YPrime, where I help lead a team building software for clinical trial operations. Outside of work, I co-founded Lucky21Labs with my wife — a small studio where we build things simply because we want them to exist.</p>
+      <a href="/cdn-cgi/l/email-protection#0f65607c674f6a776e627f636a216c6062" style="display:inline-block;background:#b5502f;color:#f6efe4;font:600 14px/1 'Libre Franklin',sans-serif;padding:13px 22px;border-radius:8px;text-decoration:none;box-shadow:0 4px 10px rgba(181,80,47,.25)" style-hover="background:#9c4327">Get in touch</a>
+    </div>
+  </div>
+
+  <!-- RESUME SUMMARY -->
+  <div style="padding:8px 64px 64px;max-width:1120px;margin:0 auto">
+    <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:26px">
+      <h2 style="margin:0;font:600 26px/1 'Source Serif 4',serif">Experience</h2>
+    </div>
+
+    <div style="display:flex;flex-direction:column;gap:14px">
+      <div style="background:#fbf7ee;border-radius:12px;padding:22px 26px;box-shadow:0 2px 8px rgba(46,38,32,.06)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <div style="font:600 17px/1.3 'Source Serif 4',serif">Technical Lead / Engineering Manager, YPrime</div>
+          <div style="font:600 13px/1 'Libre Franklin',sans-serif;color:#b5502f">[20XX] — Present</div>
+        </div>
+        <p style="margin:0;font:400 15px/1.6 'Libre Franklin',sans-serif;color:#4a4136">Lead a team of engineers building software for clinical trial operations.</p>
+      </div>
+      <div style="background:#fbf7ee;border-radius:12px;padding:22px 26px;box-shadow:0 2px 8px rgba(46,38,32,.06)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <div style="font:600 17px/1.3 'Source Serif 4',serif">Co-Founder, Lucky21Labs</div>
+          <div style="font:600 13px/1 'Libre Franklin',sans-serif;color:#b5502f">[20XX] — Present</div>
+        </div>
+        <p style="margin:0;font:400 15px/1.6 'Libre Franklin',sans-serif;color:#4a4136">Building small software products with my wife, from idea to launch.</p>
+      </div>
+      <div style="background:#fbf7ee;border-radius:12px;padding:22px 26px;box-shadow:0 2px 8px rgba(46,38,32,.06)">
+        <div style="display:flex;justify-content:space-between;align-items:baseline;margin-bottom:8px">
+          <div style="font:600 17px/1.3 'Source Serif 4',serif">Software Engineer, [Previous Company]</div>
+          <div style="font:600 13px/1 'Libre Franklin',sans-serif;color:#b5502f">[20XX] — [20XX]</div>
+        </div>
+        <p style="margin:0;font:400 15px/1.6 'Libre Franklin',sans-serif;color:#4a4136">[One-line placeholder — tell me about this role and I'll fill it in.]</p>
+      </div>
+    </div>
+
+    <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:22px">
+      <span style="font:600 13px/1 'Libre Franklin',sans-serif;padding:8px 14px;background:#ebe1cf;border-radius:20px;color:#5a4c33">Engineering Leadership</span>
+      <span style="font:600 13px/1 'Libre Franklin',sans-serif;padding:8px 14px;background:#ebe1cf;border-radius:20px;color:#5a4c33">Team Management</span>
+      <span style="font:600 13px/1 'Libre Franklin',sans-serif;padding:8px 14px;background:#ebe1cf;border-radius:20px;color:#5a4c33">Software Architecture</span>
+      <span style="font:600 13px/1 'Libre Franklin',sans-serif;padding:8px 14px;background:#ebe1cf;border-radius:20px;color:#5a4c33">Mentorship</span>
+    </div>
+
+    <a href="Resume.dc.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:26px;font:600 14px/1 'Libre Franklin',sans-serif;color:#b5502f;text-decoration:none">View full résumé →</a>
+  </div>
+
+  <!-- BLOG SUMMARY (1a-style rows, warm palette) -->
+  <div style="padding:8px 64px 64px;max-width:1120px;margin:0 auto">
+    <h2 style="margin:0 0 26px;font:600 26px/1 'Source Serif 4',serif">Writing</h2>
+    <div style="display:flex;flex-direction:column">
+      <a href="BlogPost.dc.html" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Jun 12, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">What I learned managing a team while still writing code</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">The habits that kept me useful in both jobs at once.</div>
+        </div>
+      </a>
+      <a href="Blog.dc.html" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Apr 28, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">Notes on building Lucky21Labs on nights and weekends</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">What it's actually like co-founding something with your spouse.</div>
+        </div>
+      </a>
+      <a href="Blog.dc.html" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:20px 0;border-top:1px solid rgba(46,38,32,.1);border-bottom:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Feb 3, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">Why clinical trial software is harder than it looks</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">A few constraints most engineers never have to think about.</div>
+        </div>
+      </a>
+    </div>
+    <a href="Blog.dc.html" style="display:inline-flex;align-items:center;gap:8px;margin-top:22px;font:600 14px/1 'Libre Franklin',sans-serif;color:#b5502f;text-decoration:none">View all posts →</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:26px 64px;border-top:1px solid rgba(46,38,32,.08);display:flex;justify-content:space-between;font:400 13px/1 'Libre Franklin',sans-serif;color:#7a6d54;max-width:1120px;margin:0 auto">
+    <div>© 2026 Josh Beard</div>
+    <div style="display:flex;gap:20px">
+      <a href="https://github.com/" style="color:#7a6d54;text-decoration:none" style-hover="color:#b5502f">GitHub</a>
+      <a href="#" style="color:#7a6d54;text-decoration:none" style-hover="color:#b5502f">LinkedIn</a>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>

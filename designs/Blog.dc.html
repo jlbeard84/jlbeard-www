@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>body{margin:0}</style>
+</helmet>
+
+<div data-screen-label="Blog" style="background:#f6efe4;font-family:'Libre Franklin',sans-serif;color:#2e2620;min-height:100vh">
+
+  <!-- NAV -->
+  <div style="display:flex;justify-content:space-between;align-items:center;padding:28px 64px;max-width:900px;margin:0 auto">
+    <a href="Home.dc.html" style="font:600 20px/1 'Source Serif 4',serif;color:#2e2620;text-decoration:none">Josh Beard</a>
+    <div style="display:flex;gap:8px;font:500 13px/1 'Libre Franklin',sans-serif">
+      <a href="Home.dc.html#about" style="color:#2e2620;text-decoration:none;padding:9px 16px;border-radius:20px" style-hover="background:#ebe1cf">About</a>
+      <a href="Resume.dc.html" style="color:#2e2620;text-decoration:none;padding:9px 16px;border-radius:20px" style-hover="background:#ebe1cf">Résumé</a>
+      <a href="Blog.dc.html" style="color:#2e2620;background:#ebe1cf;text-decoration:none;padding:9px 16px;border-radius:20px">Blog</a>
+    </div>
+  </div>
+
+  <div style="padding:20px 64px 8px;max-width:900px;margin:0 auto">
+    <h1 style="margin:0;font:600 34px/1.15 'Source Serif 4',serif">Writing</h1>
+  </div>
+
+  <!-- POST LIST -->
+  <div style="padding:20px 64px 64px;max-width:900px;margin:0 auto">
+    <div style="display:flex;flex-direction:column">
+      <a href="BlogPost.dc.html" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Jun 12, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">What I learned managing a team while still writing code</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">The habits that kept me useful in both jobs at once.</div>
+        </div>
+      </a>
+      <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Apr 28, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">Notes on building Lucky21Labs on nights and weekends</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">What it's actually like co-founding something with your spouse.</div>
+        </div>
+      </a>
+      <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Feb 3, 2026</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">Why clinical trial software is harder than it looks</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">A few constraints most engineers never have to think about.</div>
+        </div>
+      </a>
+      <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-top:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Dec 9, 2025</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">[Placeholder post title]</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">[Placeholder excerpt — send over real posts and I'll drop them in.]</div>
+        </div>
+      </a>
+      <a href="#" style="display:grid;grid-template-columns:130px 1fr;gap:24px;padding:22px 0;border-top:1px solid rgba(46,38,32,.1);border-bottom:1px solid rgba(46,38,32,.1);text-decoration:none;color:inherit" style-hover="background:#efe6d3">
+        <div style="font:600 13px/1.6 'Libre Franklin',sans-serif;color:#b5502f">Oct 2, 2025</div>
+        <div>
+          <div style="font:600 19px/1.3 'Source Serif 4',serif;margin-bottom:6px">[Placeholder post title]</div>
+          <div style="font:400 15px/1.6 'Libre Franklin',sans-serif;color:#5a4c33">[Placeholder excerpt — send over real posts and I'll drop them in.]</div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div style="padding:26px 64px;border-top:1px solid rgba(46,38,32,.08);display:flex;justify-content:space-between;font:400 13px/1 'Libre Franklin',sans-serif;color:#7a6d54;max-width:900px;margin:0 auto">
+    <div>© 2026 Josh Beard</div>
+    <div style="display:flex;gap:20px">
+      <a href="https://github.com/" style="color:#7a6d54;text-decoration:none" style-hover="color:#b5502f">GitHub</a>
+      <a href="#" style="color:#7a6d54;text-decoration:none" style-hover="color:#b5502f">LinkedIn</a>
+    </div>
+  </div>
+
+</div>
+
+</x-dc>
+</body>
+</html>
